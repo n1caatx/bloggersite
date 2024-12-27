@@ -1,0 +1,212 @@
+.container {
+    margin-top: 150px;
+    overflow-x: hidden;
+  }
+  
+  .headtext {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headtext h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .headtext p {
+    margin-top: 0;
+    max-width: 57%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%; /* Ensure full width */
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+  }
+  
+  .card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%; /* Make card fill available space */
+    box-sizing: border-box;
+  }
+  
+  .date {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    min-width: 60px;
+  }
+  
+  .date span {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .date small {
+    font-size: 14px;
+  }
+  
+  .image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .content {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+  
+  .content h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 14px;
+    color: #777;
+    margin: 0 0 15px;
+  }
+  
+  .meta {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  button {
+    border: 1px solid rgba(31, 199, 255, 0.903);
+    padding: 10px 24px;
+    color: white;
+    background: linear-gradient(to right, rgb(80, 210, 254), rgb(0, 71, 95));
+    border-radius: 100px;
+    transition: all ease 0.3s;
+  }
+  
+  button:hover {
+    background: white;
+    color: rgb(0, 191, 255);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+  
+    .column {
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .date {
+      font-size: 16px;
+      min-width: 50px;
+    }
+  
+    .image img {
+      width: 130px;
+      height: 130px;
+    }
+  
+    .content h3 {
+      font-size: 16px;
+    }
+  
+    .content p {
+      font-size: 12px;
+    }
+  
+    .meta {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .headtext h1 {
+      font-size: 28px;
+    }
+  
+    .headtext p {
+      font-size: 12px;
+      max-width: 80%;
+      text-align: center;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  
+    .date {
+      font-size: 14px;
+      min-width: 45px;
+    }
+  
+    .image img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .content h3 {
+      font-size: 14px;
+    }
+  
+    .content p {
+      font-size: 10px;
+    }
+  
+    .meta {
+      font-size: 10px;
+    }
+  }
+  

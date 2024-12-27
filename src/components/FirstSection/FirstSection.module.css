@@ -1,0 +1,171 @@
+.container img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.313);
+    z-index: 1; 
+}
+
+.text {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    width: 50%;
+    z-index: 2;
+    text-align: start;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+}
+
+.bottomfirst {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    z-index: 2;
+    gap: 200px;
+    position: absolute;
+    top: 90%;
+    left: 9%;
+    gap: 600px;
+    font-family: "Poppins", sans-serif;
+}
+
+.likecomment {
+    display: flex;
+    gap: 30px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.usertext h1 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.usertext p {
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.usertext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.userimage img {
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 18px;
+        left: 50%;
+        width: 70%;
+        transform: translateX(-50%);
+        padding: 15px;
+    }
+
+    .bottomfirst {
+        gap: 100px;
+        flex-direction: column;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container::before{
+        top: 364px;
+        height: 100vh;
+        left: 0;
+        }
+
+    .likecomment {
+        font-size: 12px;
+        margin-top: 140px;
+    }
+
+    .user {
+        gap: 20px;
+    }
+
+    .usertext h1 {
+        font-size: 14px;
+    }
+
+    .usertext p {
+        font-size: 10px;
+    }
+
+    .userimage img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .bottomfirst {
+        gap: 50px;
+        flex-direction: column;
+        top: 80%;
+    }
+
+    .likecomment {
+        font-size: 10px;
+        gap: 20px;
+        display: none;
+    }
+
+    .container::before{
+        top: 319px;
+        height: 100vh;
+        left: 0;
+        }
+
+    .user {
+        gap: 15px;
+        margin-top: 300px;
+    }
+
+    .usertext h1 {
+        font-size: 12px;
+    }
+
+    .usertext p {
+        font-size: 8px;
+    }
+
+    .userimage img {
+        height: 35px;
+    }
+}
